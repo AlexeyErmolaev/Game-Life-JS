@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Game Life</title>
+    <link rel="stylesheet" href="src/style.css">
+  </head>
+  <body>
+    <main class="game">
+      <canvas class="game__area"></canvas>
+      <div class="game__menu">
+        <button class="button button__random mr-bot-min">Random</button>
+        <button class="button button__start mr-bot-min">Start</button>
+        <button class="button button__clear mr-bot-min">Reset</button>
+        <div class="mr-bot-min">
+          <label for="x_cell">X cells</label>
+          <input type="number" name="x_cell" id="x_cell" value="10" />
+        </div>
+        <div class="mr-bot-min">
+          <label for="y_cell">Y cells</label>
+          <input type="number" name="y_cell" id="y_cell" value="10" />
+        </div>
+        <div class="mr-bot-min">
+          <input type="color" id="cellColor" name="cellColor" value="#000000" />
+          <label for="cellColor">Cell color</label>
+        </div>
+        <div>
+          <input type="checkbox" id="disableGrid" name="disableGrid" />
+          <label for="disableGrid">Disable grid</label>
+        </div>
+        <p>Generation time: <span class="game__menu__generation-time"></span></p>
+        <p class="game__mennu__message"></p>
+      </div>
+    </main>
+    <script src="src/game.js"></script>
+    <script src="src/index.js"></script>
+  </body>
+</html>
