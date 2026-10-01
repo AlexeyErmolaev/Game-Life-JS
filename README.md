@@ -6,3 +6,7 @@
 * Added the ability to enable and disable the grid.
 * Added the ability to change the color of living cells.
 * Added the ability to generate life randomly or using the mouse.
+
+## To run:
+1. Clone the project
+2. Open index.html in a browser
